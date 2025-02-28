@@ -55,3 +55,4 @@ for (let i = 1; i <= maxNumberCheck; i++) {
     console.log(i, "is not a prime number");
   }
 }
+//test
