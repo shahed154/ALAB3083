@@ -20,7 +20,7 @@ for (i = 0; i <= fizzBuzz; i++) {
         console.log(i + " Not divisble by 3 or 5")
     }
 }
-//console.log(n + " is a prime number")
+//console.log(n + " is a prime number")dfsgv
 //Part 2: Prime Time
 //let maxNumberCheck = 5
 //for(n = 1; n <= maxNumberCheck; n++) {
