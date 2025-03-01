@@ -26,7 +26,7 @@ for (i = 0; i <= fizzBuzz; i++) {
 //let maxNumberCheck = 5
 //for(n = 1; n <= maxNumberCheck; n++) {
   // let currentNum = n; 
-  //  for(i = 2; i < Math.sqrt(currentNum); currentNum--){
+  //  for(i = 2; i < Math.sqrt(currentNum); currentNum--) {
   //      if(i % currentNum == 0){
          // console.log(n)
    //     }
@@ -39,21 +39,51 @@ for (i = 0; i <= fizzBuzz; i++) {
 //}
 /// I GAVE UP AND HAD TO GOOGLE IT 
 
-let maxNumberCheck = 100
-let totalPrimeNumber = 0;
-for (let i = 1; i <= maxNumberCheck; i++) {
-  let prime = i > 1;
-  for (let j = 2; j <= Math.sqrt(i); j++) {
-    if (i % j == 0) {
-      prime = false;
-      break;
+
+// let totalPrimeNumber = 0;
+
+// for (let i = 1; i <= maxNumberCheck; i++) {
+//   let prime = i > 1;
+//   for (let j = 2; j <= Math.sqrt(i); j++) {
+//     if (i % j == 0) {
+//       prime = false;
+//       break;
+//     }
+//   }
+//   if (prime) {
+//    // console.log(i, "is a prime number");
+//     totalPrimeNumber += 1;
+//   } else {
+//   //  console.log(i, "is not a prime number");
+//   }
+// }
+// //test
+
+maxNumberCheck = 100
+
+for (let n = 1; n <= maxNumberCheck; n++)
+{
+  let isPrime = true;
+
+      if (n === 1)
+        {
+          isPrime = false;
+        }
+
+      for (let i = 2; i < n; i++)
+          {
+            if (n % i === 0)
+            {
+              isPrime =false
+              break;
+            }
+          }
+  if (isPrime){
+      console.log(n + " is Prime")
     }
-  }
-  if (prime) {
-    console.log(i, "is a prime number");
-    totalPrimeNumber += 1;
-  } else {
-    console.log(i, "is not a prime number");
-  }
+    if(!isPrime)
+    {
+      console.log(n + " is not Prime")
+    }
+    
 }
-//test

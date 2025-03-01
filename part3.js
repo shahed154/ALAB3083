@@ -1,4 +1,3 @@
-let CSV = ("ID,Name,Occupation,Age\n42,Bruce,Knight,41\n57,Bob,Fry Cook,19\n63,Blaine,Quiz Master,58\n98,Bill,Doctor’s Assistant,26");
 
 //console.log(CSV)
 
@@ -6,41 +5,31 @@ let CSV = ("ID,Name,Occupation,Age\n42,Bruce,Knight,41\n57,Bob,Fry Cook,19\n63,B
 
 //console.log(example)
 
+let cell1 = ""
+let cell2 = ""
+let cell3 = ""
+let cell4 = ""
 
-{
+let currentCell = 1
+let currentRow = 1
 
-let totalLength = CSV.length;
-console.log(totalLength)
-
-//let cells = 
-//while (cells < length)
-{
-//cells--
-//console.log(cells)
-}
-}
 const str = ("ID,Name,Occupation,Age\n42,Bruce,Knight,41\n57,Bob,Fry Cook,19\n63,Blaine,Quiz Master,58\n98,Bill,Doctor’s Assistant,26");
 
 
-// for (let i = 0; i < str.length; i++) {
-// 	if (str[i] == ",") {
-// 		continue;
-// 	}
+for (let i = 0; i < str.length; i++) {
 
-// 	console.log(str[i]);
-// }
+	console.log(str.slice(i, i + 1))
+	cell1 =(cell1.concat(str.slice(i,i+1)))
 
 
+	if (str.slice(i, i + 1) == ',') {
 
-let x = 30;
+		
+	//	console.log("~~" + cell2)
+	break;
 
-while (x > 0) {
-	x /= 2;
-	x--;
-
-	if (x % 1 != 0) {
-		break;
 	}
-	
-	console.log(x);
+
 }
+
+
