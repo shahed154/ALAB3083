@@ -17,20 +17,24 @@ const str = ("ID,Name,Occupation,Age\n42,Bruce,Knight,41\n57,Bob,Fry Cook,19\n63
 
 for (let i = 0; i < str.length; i++) {
 
+	let currentCell= 1
+	let currentRow=1
 	console.log(str.slice(i, i + 1))
 
 	if(cell1 = ""){
 	cell1 =(cell1.concat(str.slice(i,i+1)))
 	}
-	else if(cell2 = ""){
-		cell2 =(cell2.concat(str.slice(i,i+1)))
-		}
-		else if(cell3 = ""){
-			cell3 =(cell3.concat(str.slice(i,i+1)))
-			}	else if(cell4 = ""){
-				cell4 =(cell4.concat(str.slice(i,i+1)))
-				}
 
+	
+						//else if(cell2 = ""){
+						//	cell2 =(cell2.concat(str.slice(i,i+1)))
+							//}
+							//else if(cell3 = ""){
+							//	cell3 =(cell3.concat(str.slice(i,i+1)))
+							//	}	else if(cell4 = ""){
+							//		cell4 =(cell4.concat(str.slice(i,i+1)))
+							//		}
+					//
 	if (str.slice(i, i + 1) == ',') {
 
 		// cell1 = cell1.slice(0, -1)
